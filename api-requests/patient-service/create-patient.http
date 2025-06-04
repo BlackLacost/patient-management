@@ -1,4 +1,4 @@
-###
+### Create a new patient entity
 POST http://localhost:4000/patients
 Content-Type: application/json
 
@@ -9,9 +9,8 @@ Content-Type: application/json
   "dateOfBirth": "1995-09-09",
   "registeredDate": "2024-11-28"
 }
-###
 
-###
+### Create a new patient without email
 POST http://localhost:4000/patients
 Content-Type: application/json
 
@@ -22,9 +21,8 @@ Content-Type: application/json
   "dateOfBirth": "1995-09-09",
   "registeredDate": "2024-11-28"
 }
-###
 
-### Without registeredDate
+### Create a new patient without registeredDate
 POST http://localhost:4000/patients
 Content-Type: application/json
 

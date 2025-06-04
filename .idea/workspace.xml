@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="OpenAPI docs on /v3/api-docs">
+      <change afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Exception" />
+        <option value="HTTP Request" />
+        <option value="Interface" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Patient entity in patient-service" />
+        <option name="rewordedMessage" value="Patient model" />
+      </RewordedCommitMessageMapping>
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Patient repository in patient-service" />
+        <option name="rewordedMessage" value="Patient repository" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="2" />
+    <option name="onto" value="15d64d94173704aa7348499e4a21a6b61be6949e" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
+    <file url="file://$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2y0FFUGAuO9UA6lmbRT8rHcGk7V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.patient-service-db.executor": "Run",
+    "Docker.patient-service.executor": "Run",
+    "HTTP Request.All in get-patients.executor": "Run",
+    "HTTP Request.create-patient | #1.executor": "Run",
+    "HTTP Request.create-patient | #2.executor": "Run",
+    "HTTP Request.create-patient | #3.executor": "Run",
+    "HTTP Request.delete-patient | Delete an existing patient entity.executor": "Run",
+    "HTTP Request.delete-patient | Updates an existing patient entity.executor": "Run",
+    "HTTP Request.get-patients | GET request to example server.executor": "Run",
+    "HTTP Request.update-patient | #1.executor": "Run",
+    "HTTP Request.update-patient | #2.executor": "Run",
+    "HTTP Request.update-patient | #3.executor": "Run",
+    "HTTP Request.update-patient | Updates an existing patient entity.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.PatientServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "h2"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Docker.patient-service">
+    <configuration name="create-patient | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="delete-patient | Delete an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" executionIdentifier="Delete an existing patient entity" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="get-patients | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" executionIdentifier="GET request to example server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | Updates an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" executionIdentifier="Updates an existing patient entity" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="patient-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.patientservice.PatientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:latest" />
+          <option name="containerName" value="patient-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="5000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="C:\Users\black\db_volumes\patient-service-db" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="patient-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="patient-service:latest" />
+          <option name="containerName" value="patient-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://patient-service-db:5432/db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4000" />
+                <option name="hostPort" value="4000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="patient-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="patient-service-db" run_configuration_type="docker-deploy" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.patient-service" />
+      <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
+      <item itemvalue="HTTP Request.create-patient | #1" />
+      <item itemvalue="HTTP Request.delete-patient | Delete an existing patient entity" />
+      <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+      <item itemvalue="HTTP Request.update-patient | #3" />
+      <item itemvalue="Spring Boot.PatientServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.update-patient | #3" />
+        <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
+        <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+        <item itemvalue="HTTP Request.delete-patient | Delete an existing patient entity" />
+        <item itemvalue="HTTP Request.create-patient | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="" />
+      <created>1748963480570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748963480570</updated>
+      <workItem from="1748963481467" duration="195000" />
+      <workItem from="1748963683569" duration="1316000" />
+      <workItem from="1748965013882" duration="24122000" />
+    </task>
+    <task id="LOCAL-00001" summary="Patient entity in patient-service">
+      <option name="closed" value="true" />
+      <created>1748967024577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748967024577</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Patient entity in patient-service">
+      <option name="closed" value="true" />
+      <created>1748967151053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748967151053</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Patient entity in patient-service">
+      <option name="closed" value="true" />
+      <created>1748967379112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748967379112</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Patient repository in patient-service">
+      <option name="closed" value="true" />
+      <created>1748967545454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748967545454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Patient service -&gt; getPatients">
+      <option name="closed" value="true" />
+      <created>1748969485245</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748969485245</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Patient controller -&gt; getPatients">
+      <option name="closed" value="true" />
+      <created>1748969935170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748969935170</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Patient controller -&gt; getPatients">
+      <option name="closed" value="true" />
+      <created>1748969967760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748969967760</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Api requests patient service">
+      <option name="closed" value="true" />
+      <created>1748970207779</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748970207779</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749019142255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749019142255</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Create patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749019173596</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749019173596</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749023523371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749023523371</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749023543569</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749023543569</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Delete patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749032731314</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749032731314</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Delete patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749032743852</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749032743852</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Delete patient endpoint">
+      <option name="closed" value="true" />
+      <created>1749032747891</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749032747891</updated>
+    </task>
+    <task id="LOCAL-00016" summary="OpenAPI docs on /v3/api-docs">
+      <option name="closed" value="true" />
+      <created>1749034267494</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749034267494</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Patient model" />
+    <MESSAGE value="Patient entity in patient-service" />
+    <MESSAGE value="Patient repository in patient-service" />
+    <MESSAGE value="Patient service -&gt; getPatients" />
+    <MESSAGE value="Patient controller -&gt; getPatients" />
+    <MESSAGE value="Api requests patient service" />
+    <MESSAGE value="Create patient endpoint" />
+    <MESSAGE value="Update patient endpoint" />
+    <MESSAGE value="Delete patient endpoint" />
+    <MESSAGE value="OpenAPI docs on /v3/api-docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenAPI docs on /v3/api-docs" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
