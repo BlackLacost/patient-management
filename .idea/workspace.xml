@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="OpenAPI docs on /v3/api-docs">
-      <change afterPath="$PROJECT_DIR$/patient-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="Dockerize patient service">
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/pm/billingservice/grpc/BillingGrpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/proto/billing_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +21,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Exception" />
-        <option value="HTTP Request" />
         <option value="Interface" />
         <option value="Dockerfile" />
+        <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -41,16 +46,22 @@
     <option name="currentCommit" value="2" />
     <option name="onto" value="15d64d94173704aa7348499e4a21a6b61be6949e" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" root0="SKIP_INSPECTION" />
+    <setting file="jar://C:/Program Files/Java/jdk-21/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar!/org/springframework/data/jpa/repository/JpaRepository.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/http/ResponseEntity.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="HttpClientSelectedEnvironments">
-    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
     <file url="file://$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -70,16 +81,23 @@
     "Docker.patient-service-db.executor": "Run",
     "Docker.patient-service.executor": "Run",
     "HTTP Request.All in get-patients.executor": "Run",
+    "HTTP Request.create-billing-account | #1.executor": "Run",
     "HTTP Request.create-patient | #1.executor": "Run",
     "HTTP Request.create-patient | #2.executor": "Run",
     "HTTP Request.create-patient | #3.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient entity without email.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient entity.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient without email.executor": "Run",
+    "HTTP Request.create-patient | Create a new patient without registeredDate.executor": "Run",
     "HTTP Request.delete-patient | Delete an existing patient entity.executor": "Run",
     "HTTP Request.delete-patient | Updates an existing patient entity.executor": "Run",
     "HTTP Request.get-patients | GET request to example server.executor": "Run",
     "HTTP Request.update-patient | #1.executor": "Run",
     "HTTP Request.update-patient | #2.executor": "Run",
     "HTTP Request.update-patient | #3.executor": "Run",
+    "HTTP Request.update-patient | Updates an existing patient entity with new email.executor": "Run",
     "HTTP Request.update-patient | Updates an existing patient entity.executor": "Run",
+    "Maven.billing-service [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -88,6 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BillingServiceApplication.executor": "Run",
     "Spring Boot.PatientServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -97,7 +116,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "settings.editor.selected.configurable": "settings.sync",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -107,11 +126,14 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.patient-service">
-    <configuration name="create-patient | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.BillingServiceApplication">
+    <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="delete-patient | Delete an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" executionIdentifier="Delete an existing patient entity" runType="Run single request">
+    <configuration name="create-patient | Create a new patient without email" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="Create a new patient without email" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="create-patient | Create a new patient without registeredDate" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="Create a new patient without registeredDate" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" executionIdentifier="GET request to example server" runType="Run single request">
@@ -120,8 +142,12 @@
     <configuration name="update-patient | Updates an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" executionIdentifier="Updates an existing patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="update-patient | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" executionIdentifier="#3" index="3" runType="Run single request">
-      <method v="2" />
+    <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="billing-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.billingservice.BillingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -221,20 +247,21 @@
     <list>
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.patient-service" />
+      <item itemvalue="HTTP Request.create-billing-account | #1" />
+      <item itemvalue="HTTP Request.create-patient | Create a new patient without email" />
+      <item itemvalue="HTTP Request.create-patient | Create a new patient without registeredDate" />
       <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
-      <item itemvalue="HTTP Request.create-patient | #1" />
-      <item itemvalue="HTTP Request.delete-patient | Delete an existing patient entity" />
       <item itemvalue="HTTP Request.get-patients | GET request to example server" />
-      <item itemvalue="HTTP Request.update-patient | #3" />
+      <item itemvalue="Spring Boot.BillingServiceApplication" />
       <item itemvalue="Spring Boot.PatientServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.update-patient | #3" />
+        <item itemvalue="HTTP Request.create-billing-account | #1" />
         <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
         <item itemvalue="HTTP Request.get-patients | GET request to example server" />
-        <item itemvalue="HTTP Request.delete-patient | Delete an existing patient entity" />
-        <item itemvalue="HTTP Request.create-patient | #1" />
+        <item itemvalue="HTTP Request.create-patient | Create a new patient without registeredDate" />
+        <item itemvalue="HTTP Request.create-patient | Create a new patient without email" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +282,9 @@
       <updated>1748963480570</updated>
       <workItem from="1748963481467" duration="195000" />
       <workItem from="1748963683569" duration="1316000" />
-      <workItem from="1748965013882" duration="24122000" />
+      <workItem from="1748965013882" duration="26046000" />
+      <workItem from="1749042956909" duration="2452000" />
+      <workItem from="1749045453432" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -385,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749034267494</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Dockerize patient service">
+      <option name="closed" value="true" />
+      <created>1749037823716</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749037823716</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +450,8 @@
     <MESSAGE value="Update patient endpoint" />
     <MESSAGE value="Delete patient endpoint" />
     <MESSAGE value="OpenAPI docs on /v3/api-docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="OpenAPI docs on /v3/api-docs" />
+    <MESSAGE value="Dockerize patient service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerize patient service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
