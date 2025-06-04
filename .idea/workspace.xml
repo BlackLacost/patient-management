@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="Dockerize patient service">
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/pm/billingservice/grpc/BillingGrpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/proto/billing_service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="Dockerized billing service">
+      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +17,9 @@
       <list>
         <option value="Exception" />
         <option value="Interface" />
-        <option value="Dockerfile" />
         <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -78,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.billing-service.executor": "Run",
     "Docker.patient-service-db.executor": "Run",
     "Docker.patient-service.executor": "Run",
     "HTTP Request.All in get-patients.executor": "Run",
@@ -101,9 +96,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth0": "1217",
+    "RequestMappingsPanelWidth1": "1216",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BillingServiceApplication.executor": "Run",
@@ -126,7 +122,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.BillingServiceApplication">
+  <component name="RunManager" selected="Docker.billing-service">
     <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -156,6 +152,29 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="billing-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="billing-service:latest" />
+          <option name="containerName" value="billing-service" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4001" />
+                <option name="hostPort" value="4001" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9001" />
+                <option name="hostPort" value="9001" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="billing-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="patient-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
@@ -245,6 +264,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Docker.billing-service" />
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="HTTP Request.create-billing-account | #1" />
@@ -258,8 +278,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.create-billing-account | #1" />
-        <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
         <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+        <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient without registeredDate" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient without email" />
       </list>
@@ -284,7 +304,8 @@
       <workItem from="1748963683569" duration="1316000" />
       <workItem from="1748965013882" duration="26046000" />
       <workItem from="1749042956909" duration="2452000" />
-      <workItem from="1749045453432" duration="1141000" />
+      <workItem from="1749045453432" duration="2462000" />
+      <workItem from="1749049169127" duration="1056000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -422,7 +443,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749037823716</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Grpc billing service example">
+      <option name="closed" value="true" />
+      <created>1749046778859</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749046778859</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Dockerized billing service">
+      <option name="closed" value="true" />
+      <created>1749049969088</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749049969088</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +488,9 @@
     <MESSAGE value="Delete patient endpoint" />
     <MESSAGE value="OpenAPI docs on /v3/api-docs" />
     <MESSAGE value="Dockerize patient service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerize patient service" />
+    <MESSAGE value="Grpc billing service example" />
+    <MESSAGE value="Dockerized billing service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerized billing service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
