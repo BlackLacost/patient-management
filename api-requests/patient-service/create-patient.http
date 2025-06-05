@@ -1,17 +1,17 @@
 ### Create a new patient entity
-POST http://localhost:4000/patients
+POST http://localhost:4004/api/patients
 Content-Type: application/json
 
 {
   "name": "John Doe Kafka Test",
-  "email": "kafak_test@example.com",
+  "email": "kafak_test2@example.com",
   "address": "123 main street",
   "dateOfBirth": "1995-09-09",
   "registeredDate": "2024-11-28"
 }
 
 ### Create a new patient without email
-POST http://localhost:4000/patients
+POST http://localhost:4004/api/patients
 Content-Type: application/json
 
 {
@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ### Create a new patient without registeredDate
-POST http://localhost:4000/patients
+POST http://localhost:4004/api/patients
 Content-Type: application/json
 
 {
