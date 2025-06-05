@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="Call createBillingAccount when create new patient">
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/kafka/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/proto/patient_event.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" root0="SKIP_INSPECTION" />
     <setting file="jar://C:/Program Files/Java/jdk-21/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.69.0/grpc-stub-1.69.0.jar!/io/grpc/stub/StreamObserver.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar!/org/springframework/data/jpa/repository/JpaRepository.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/http/ResponseEntity.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java" root0="SKIP_INSPECTION" />
@@ -70,73 +77,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.billing-service.executor": "Run",
-    "Docker.patient-service-db.executor": "Run",
-    "Docker.patient-service.executor": "Run",
-    "HTTP Request.All in get-patients.executor": "Run",
-    "HTTP Request.create-billing-account | #1.executor": "Run",
-    "HTTP Request.create-patient | #1.executor": "Run",
-    "HTTP Request.create-patient | #2.executor": "Run",
-    "HTTP Request.create-patient | #3.executor": "Run",
-    "HTTP Request.create-patient | Create a new patient entity without email.executor": "Run",
-    "HTTP Request.create-patient | Create a new patient entity.executor": "Run",
-    "HTTP Request.create-patient | Create a new patient without email.executor": "Run",
-    "HTTP Request.create-patient | Create a new patient without registeredDate.executor": "Run",
-    "HTTP Request.delete-patient | Delete an existing patient entity.executor": "Run",
-    "HTTP Request.delete-patient | Updates an existing patient entity.executor": "Run",
-    "HTTP Request.get-patients | GET request to example server.executor": "Run",
-    "HTTP Request.update-patient | #1.executor": "Run",
-    "HTTP Request.update-patient | #2.executor": "Run",
-    "HTTP Request.update-patient | #3.executor": "Run",
-    "HTTP Request.update-patient | Updates an existing patient entity with new email.executor": "Run",
-    "HTTP Request.update-patient | Updates an existing patient entity.executor": "Run",
-    "Maven.billing-service [compile].executor": "Run",
-    "Maven.patient-service [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BillingServiceApplication.executor": "Run",
-    "Spring Boot.PatientServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "E:/code/patient-management/patient-service/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.billing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.kafka.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in create-patient.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in get-patients.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-billing-account | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient entity without email.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient without email.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.create-patient | Create a new patient without registeredDate.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.delete-patient | Delete an existing patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.delete-patient | Updates an existing patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.get-patients | GET request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | Updates an existing patient entity with new email.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.update-patient | Updates an existing patient entity.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BillingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code/patient-management/patient-service/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;bigdataide_conn_settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code\patient-management\patient-service\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.patient-service">
+  <component name="RunManager" selected="HTTP Request.create-patient | Create a new patient entity">
+    <configuration name="All in create-patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http">
+      <method v="2" />
+    </configuration>
     <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="create-patient | Create a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="Create a new patient entity" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="create-patient | Create a new patient without registeredDate" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="Create a new patient without registeredDate" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="get-patients | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" executionIdentifier="GET request to example server" runType="Run single request">
@@ -179,6 +189,60 @@
           </option>
           <option name="commandLineOptions" value="--network internal" />
           <option name="sourceFilePath" value="billing-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="bitnami/kafka:latest" />
+          <option name="containerName" value="kafka" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_ADVERTISED_LISTENERS" />
+                <option name="value" value="PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_CONTROLLER_LISTENER_NAMES" />
+                <option name="value" value="CONTROLLER" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_CONTROLLER_QUORUM_VOTERS" />
+                <option name="value" value="0@kafka:9093" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP" />
+                <option name="value" value="CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_LISTENERS" />
+                <option name="value" value="PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_NODE_ID" />
+                <option name="value" value="0" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="KAFKA_CFG_PROCESS_ROLES" />
+                <option name="value" value="controller,broker" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9092" />
+                <option name="hostPort" value="9092" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9094" />
+                <option name="hostPort" value="9094" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
         </settings>
       </deployment>
       <method v="2" />
@@ -233,6 +297,14 @@
           <option name="envVars">
             <list>
               <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_ADDRESS" />
+                <option name="value" value="billing-service" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="BILLING_SERVICE_GRPC_PORT" />
+                <option name="value" value="9001" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
                 <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
                 <option name="value" value="password" />
               </DockerEnvVarImpl>
@@ -253,12 +325,8 @@
                 <option name="value" value="always" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
-                <option name="name" value="BILLING_SERVICE_ADDRESS" />
-                <option name="value" value="billing-service" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="BILLING_SERVICE_GRPC_PORT" />
-                <option name="value" value="9001" />
+                <option name="name" value="SPRING_KAFKA_BOOTSTRAP_SERVERS" />
+                <option name="value" value="kafka:9092" />
               </DockerEnvVarImpl>
             </list>
           </option>
@@ -277,15 +345,17 @@
       <method v="2">
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="billing-service" run_configuration_type="docker-deploy" />
         <option name="RunConfigurationTask" enabled="false" run_configuration_name="patient-service-db" run_configuration_type="docker-deploy" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="kafka" run_configuration_type="docker-deploy" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Docker.billing-service" />
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.patient-service" />
+      <item itemvalue="Docker.kafka" />
+      <item itemvalue="HTTP Request.All in create-patient" />
       <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
       <item itemvalue="HTTP Request.create-billing-account | #1" />
-      <item itemvalue="HTTP Request.create-patient | Create a new patient without registeredDate" />
       <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
       <item itemvalue="HTTP Request.get-patients | GET request to example server" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
@@ -294,18 +364,18 @@
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
+        <item itemvalue="HTTP Request.All in create-patient" />
         <item itemvalue="HTTP Request.create-billing-account | #1" />
         <item itemvalue="HTTP Request.get-patients | GET request to example server" />
         <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
-        <item itemvalue="HTTP Request.create-patient | Create a new patient without registeredDate" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -321,7 +391,10 @@
       <workItem from="1748965013882" duration="26046000" />
       <workItem from="1749042956909" duration="2452000" />
       <workItem from="1749045453432" duration="2462000" />
-      <workItem from="1749049169127" duration="4386000" />
+      <workItem from="1749049169127" duration="5894000" />
+      <workItem from="1749056105936" duration="74000" />
+      <workItem from="1749056247030" duration="7882000" />
+      <workItem from="1749112237962" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -491,7 +564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749052841638</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Call createBillingAccount when create new patient">
+      <option name="closed" value="true" />
+      <created>1749053962604</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749053962604</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
