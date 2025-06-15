@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="auth server" />
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="auth service -&gt; login">
+      <change afterPath="$PROJECT_DIR$/api-requests/auth-service/validate.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/auth-service/login.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/auth-service/login.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/util/JwtUtil.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +24,8 @@
         <option value="Interface" />
         <option value="Dockerfile" />
         <option value="Enum" />
-        <option value="HTTP Request" />
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -40,6 +47,7 @@
     <option name="onto" value="15d64d94173704aa7348499e4a21a6b61be6949e" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" root0="SKIP_INSPECTION" />
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.69.0/grpc-stub-1.69.0.jar!/io/grpc/stub/StreamObserver.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar!/org/springframework/data/jpa/repository/JpaRepository.class" root0="SKIP_INSPECTION" />
@@ -52,6 +60,7 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
     <file url="file://$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -100,6 +109,7 @@
     "HTTP Request.update-patient | #3.executor": "Run",
     "HTTP Request.update-patient | Updates an existing patient entity with new email.executor": "Run",
     "HTTP Request.update-patient | Updates an existing patient entity.executor": "Run",
+    "HTTP Request.validate | Authorization by token.executor": "Run",
     "Maven.analytics-service [clean].executor": "Run",
     "Maven.analytics-service [compile].executor": "Run",
     "Maven.billing-service [compile].executor": "Run",
@@ -149,8 +159,8 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12753907" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.22910157" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22910157" />
+      <window_info id="Commit" order="1" weight="0.22910157" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="DataprocToolWindow" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -165,11 +175,11 @@
       <window_info anchor="bottom" id="EmrToolWindow" />
       <window_info anchor="bottom" id="FlinkToolWindow" />
       <window_info anchor="bottom" id="Kubernetes" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32974288" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32905686" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.32974288" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32974288" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.32974288" />
+      <window_info active="true" anchor="bottom" id="Services" order="4" visible="true" weight="0.32974288" />
       <window_info anchor="bottom" id="Database Changes" order="5" weight="0.32974288" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974288" />
       <window_info anchor="bottom" id="Profiler" order="7" weight="0.32974288" />
@@ -210,9 +220,6 @@
     <configuration name="All in create-patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http">
       <method v="2" />
     </configuration>
-    <configuration name="create-billing-account | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/grpc-requests/billing-service/create-billing-account.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="create-patient | Create a new patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" executionIdentifier="Create a new patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -220,6 +227,9 @@
       <method v="2" />
     </configuration>
     <configuration name="login | Login Request to retrieve a token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/login.http" executionIdentifier="Login Request to retrieve a token" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="validate | Authorization by token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/validate.http" executionIdentifier="Authorization by token" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
@@ -633,10 +643,10 @@
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="Docker.api-gateway" />
       <item itemvalue="Docker.kafka" />
+      <item itemvalue="HTTP Request.validate | Authorization by token" />
       <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
       <item itemvalue="HTTP Request.All in create-patient" />
       <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
-      <item itemvalue="HTTP Request.create-billing-account | #1" />
       <item itemvalue="HTTP Request.get-patients | GET request to example server" />
       <item itemvalue="Remote JVM Debug.Unnamed" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -647,11 +657,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.validate | Authorization by token" />
         <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
         <item itemvalue="HTTP Request.get-patients | GET request to example server" />
         <item itemvalue="HTTP Request.All in create-patient" />
-        <item itemvalue="HTTP Request.create-billing-account | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -693,7 +703,7 @@
       <workItem from="1749314168355" duration="9218000" />
       <workItem from="1749980070505" duration="355000" />
       <workItem from="1749980774636" duration="644000" />
-      <workItem from="1749982020304" duration="6046000" />
+      <workItem from="1749982020304" duration="6996000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -919,15 +929,33 @@
       <option name="project" value="LOCAL" />
       <updated>1749990317309</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="auth service -&gt; login">
+      <option name="closed" value="true" />
+      <created>1749990388676</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1749990388676</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1c9a91f3-9c94-4553-a458-16804d4604fa" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="1c9a91f3-9c94-4553-a458-16804d4604fa">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -956,7 +984,8 @@
     <MESSAGE value="api-gateway" />
     <MESSAGE value="java 17 -&gt; 21" />
     <MESSAGE value="auth server" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth server" />
+    <MESSAGE value="auth service -&gt; login" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth service -&gt; login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
