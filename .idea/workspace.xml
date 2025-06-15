@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="auth service -&gt; login">
-      <change afterPath="$PROJECT_DIR$/api-requests/auth-service/validate.http" afterDir="false" />
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="api gateway for auth service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-requests/auth-service/login.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/auth-service/login.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +339,7 @@
       </deployment>
       <method v="2">
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="patient-service" run_configuration_type="docker-deploy" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="auth-service-db" run_configuration_type="docker-deploy" />
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="auth-service" run_configuration_type="docker-deploy" />
       </method>
     </configuration>
@@ -423,14 +420,6 @@
                 <option name="name" value="SPRING_SQL_INIT_MODE" />
                 <option name="value" value="always" />
               </DockerEnvVarImpl>
-            </list>
-          </option>
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="4005" />
-                <option name="hostPort" value="4005" />
-              </DockerPortBindingImpl>
             </list>
           </option>
           <option name="commandLineOptions" value="--network internal" />
@@ -703,7 +692,7 @@
       <workItem from="1749314168355" duration="9218000" />
       <workItem from="1749980070505" duration="355000" />
       <workItem from="1749980774636" duration="644000" />
-      <workItem from="1749982020304" duration="6996000" />
+      <workItem from="1749982020304" duration="8031000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -937,7 +926,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749990388676</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="auth service -&gt; validate bearer token">
+      <option name="closed" value="true" />
+      <created>1749991376504</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1749991376504</updated>
+    </task>
+    <task id="LOCAL-00031" summary="api gateway for auth service">
+      <option name="closed" value="true" />
+      <created>1749992004481</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1749992004481</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -985,7 +990,9 @@
     <MESSAGE value="java 17 -&gt; 21" />
     <MESSAGE value="auth server" />
     <MESSAGE value="auth service -&gt; login" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth service -&gt; login" />
+    <MESSAGE value="auth service -&gt; validate bearer token" />
+    <MESSAGE value="api gateway for auth service" />
+    <option name="LAST_COMMIT_MESSAGE" value="api gateway for auth service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
