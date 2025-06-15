@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="api gateway for auth service">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/pm/apigateway/exception/JwtValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/pm/apigateway/filter/JwtValidationGatewayFilterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/pm/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/delete-patient.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
         <option value="Interface" />
         <option value="Dockerfile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -212,7 +219,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.auth-service">
+  <component name="RunManager" selected="Docker.api-gateway">
     <configuration name="All in create-patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http">
       <method v="2" />
     </configuration>
@@ -317,6 +324,14 @@
         <settings>
           <option name="imageTag" value="api-gateway:latest" />
           <option name="containerName" value="api-gateway" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="AUTH_SERVICE_URL" />
+                <option name="value" value="http://auth-service:4005" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
@@ -337,11 +352,7 @@
           </option>
         </settings>
       </deployment>
-      <method v="2">
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="patient-service" run_configuration_type="docker-deploy" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="auth-service-db" run_configuration_type="docker-deploy" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="auth-service" run_configuration_type="docker-deploy" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="auth-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
@@ -646,10 +657,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+        <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
         <item itemvalue="HTTP Request.validate | Authorization by token" />
         <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
-        <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
-        <item itemvalue="HTTP Request.get-patients | GET request to example server" />
         <item itemvalue="HTTP Request.All in create-patient" />
       </list>
     </recent_temporary>
@@ -692,7 +703,7 @@
       <workItem from="1749314168355" duration="9218000" />
       <workItem from="1749980070505" duration="355000" />
       <workItem from="1749980774636" duration="644000" />
-      <workItem from="1749982020304" duration="8031000" />
+      <workItem from="1749982020304" duration="10201000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -942,7 +953,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749992004481</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="api gateway for auth service">
+      <option name="closed" value="true" />
+      <created>1749992326035</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1749992326035</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

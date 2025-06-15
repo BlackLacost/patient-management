@@ -1,5 +1,6 @@
 ### Create a new patient entity
 POST http://localhost:4004/api/patients
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -12,6 +13,7 @@ Content-Type: application/json
 
 ### Create a new patient without email
 POST http://localhost:4004/api/patients
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -24,6 +26,7 @@ Content-Type: application/json
 
 ### Create a new patient without registeredDate
 POST http://localhost:4004/api/patients
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
