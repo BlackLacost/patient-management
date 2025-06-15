@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="api-gateway">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e41999a4-7bbe-46fb-8b6f-ca7ed5bfddd6" name="Changes" comment="auth server" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,8 +15,9 @@
       <list>
         <option value="Exception" />
         <option value="Interface" />
-        <option value="HTTP Request" />
         <option value="Dockerfile" />
+        <option value="Enum" />
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -47,11 +41,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" root0="SKIP_INSPECTION" />
-    <setting file="jar://C:/Program Files/Java/jdk-21/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.69.0/grpc-stub-1.69.0.jar!/io/grpc/stub/StreamObserver.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar!/org/springframework/data/jpa/repository/JpaRepository.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/http/ResponseEntity.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/6.5.0/spring-security-crypto-6.5.0.jar!/org/springframework/security/crypto/password/PasswordEncoder.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar!/org/springframework/beans/factory/UnsatisfiedDependencyException.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.7/spring-web-6.2.7.jar!/org/springframework/web/bind/MissingServletRequestParameterException.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
@@ -81,6 +76,7 @@
     "Docker.analytics-service.executor": "Run",
     "Docker.api-gateway.executor": "Run",
     "Docker.auth-service-db.executor": "Run",
+    "Docker.auth-service.executor": "Run",
     "Docker.billing-service.executor": "Run",
     "Docker.kafka.executor": "Run",
     "Docker.patient-service-db.executor": "Run",
@@ -98,6 +94,7 @@
     "HTTP Request.delete-patient | Delete an existing patient entity.executor": "Run",
     "HTTP Request.delete-patient | Updates an existing patient entity.executor": "Run",
     "HTTP Request.get-patients | GET request to example server.executor": "Run",
+    "HTTP Request.login | Login Request to retrieve a token.executor": "Run",
     "HTTP Request.update-patient | #1.executor": "Run",
     "HTTP Request.update-patient | #2.executor": "Run",
     "HTTP Request.update-patient | #3.executor": "Run",
@@ -109,6 +106,7 @@
     "Maven.patient-service [clean].executor": "Run",
     "Maven.patient-service [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Remote JVM Debug.Unnamed.executor": "Debug",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -118,19 +116,21 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AnalyticsServiceApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.BillingServiceApplication.executor": "Run",
     "Spring Boot.PatientServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "E:/code/patient-management/api-gateway",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/ubuntu-24-docker/home/ilya/code/patient-management",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -140,8 +140,56 @@
     ]
   }
 }]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="ORM" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Backup and Sync History" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12753907" />
+      <window_info active="true" id="Commit" order="1" visible="true" weight="0.22910157" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="DataprocToolWindow" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="hadoop-toolwindow" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="bottom" id="zeppelin-shell-toolwindow" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="KafkaToolWindow" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="HiveToolWindow" />
+      <window_info anchor="bottom" id="GlueToolWindow" />
+      <window_info anchor="bottom" id="EmrToolWindow" />
+      <window_info anchor="bottom" id="FlinkToolWindow" />
+      <window_info anchor="bottom" id="Kubernetes" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32974288" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.32974288" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.32974288" />
+      <window_info anchor="bottom" id="Database Changes" order="5" weight="0.32974288" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32974288" />
+      <window_info anchor="bottom" id="Profiler" order="7" weight="0.32974288" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.32974288" />
+      <window_info anchor="right" id="PR AI Assistant" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="BigDataToolWindow" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.3298828" />
+      <window_info active="true" anchor="right" id="Database" order="2" visible="true" weight="0.3298828" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info active="true" anchor="right" id="KafkaClient.KafkaToolWindow" order="5" visible="true" weight="0.3720703" />
+      <window_info anchor="right" id="Beans" order="6" weight="0.17832032" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\patient-management\auth-service" />
       <recent name="E:\code\patient-management\api-gateway" />
       <recent name="E:\code\patient-management\analytics-service" />
       <recent name="E:\code\patient-management\analytics-service\src\main\proto" />
@@ -158,7 +206,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.billing-service">
+  <component name="RunManager" selected="Docker.auth-service">
     <configuration name="All in create-patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-requests/patient-service/create-patient.http">
       <method v="2" />
     </configuration>
@@ -171,7 +219,20 @@
     <configuration name="get-patients | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/get-patients.http" executionIdentifier="GET request to example server" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="update-patient | Updates an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/patient-service/update-patient.http" executionIdentifier="Updates an existing patient entity" runType="Run single request">
+    <configuration name="login | Login Request to retrieve a token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/auth-service/login.http" executionIdentifier="Login Request to retrieve a token" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
       <method v="2" />
     </configuration>
     <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -184,6 +245,13 @@
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pm.authservice.AuthServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,7 +298,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/root/.m2" />
-                <option name="hostPath" value="C:\Users\black\.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -257,7 +325,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/root/.m2" />
-                <option name="hostPath" value="C:\Users\black\.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -265,6 +333,7 @@
       </deployment>
       <method v="2">
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="patient-service" run_configuration_type="docker-deploy" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="auth-service" run_configuration_type="docker-deploy" />
       </method>
     </configuration>
     <configuration name="auth-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
@@ -275,16 +344,16 @@
           <option name="envVars">
             <list>
               <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_USER" />
-                <option name="value" value="admin_user" />
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="db" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
                 <option name="name" value="POSTGRES_PASSWORD" />
                 <option name="value" value="password" />
               </DockerEnvVarImpl>
               <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_DB" />
-                <option name="value" value="db" />
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin_user" />
               </DockerEnvVarImpl>
             </list>
           </option>
@@ -301,11 +370,66 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/var/lib/postgresql/data" />
-                <option name="hostPath" value="C:\Users\black\db_volumes\auth-service-db" />
+                <option name="hostPath" value="$USER_HOME$/db_volumes/auth-service-db" />
               </DockerVolumeBindingImpl>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/root/.m2" />
-                <option name="hostPath" value="C:\Users\black\.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="auth-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="auth-service:latest" />
+          <option name="containerName" value="auth-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="JWT_SECRET" />
+                <option name="value" value="YjQ4MjcxN2Y1Mjc0YmFlZGRiOTE5YTBlZjU5MTMzNzliMjVhYTI4ODY4MzIwMDM4YzQ5YWRiODY1MjVhZDRmMAo=" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://auth-service-db:5432/db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin_user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4005" />
+                <option name="hostPort" value="4005" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="auth-service/Dockerfile" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/root/.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -336,7 +460,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/root/.m2" />
-                <option name="hostPath" value="C:\Users\black\.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -432,7 +556,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/var/lib/postgresql/data" />
-                <option name="hostPath" value="C:\Users\black\db_volumes\patient-service-db" />
+                <option name="hostPath" value="$USER_HOME$/db_volumes/patient-service-db" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -487,7 +611,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="/root/.m2" />
-                <option name="hostPath" value="C:\Users\black\.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -502,17 +626,20 @@
     </configuration>
     <list>
       <item itemvalue="Docker.billing-service" />
+      <item itemvalue="Docker.auth-service" />
       <item itemvalue="Docker.analytics-service" />
       <item itemvalue="Docker.patient-service-db" />
       <item itemvalue="Docker.auth-service-db" />
       <item itemvalue="Docker.patient-service" />
       <item itemvalue="Docker.api-gateway" />
       <item itemvalue="Docker.kafka" />
+      <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
       <item itemvalue="HTTP Request.All in create-patient" />
       <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
       <item itemvalue="HTTP Request.create-billing-account | #1" />
-      <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
       <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+      <item itemvalue="Remote JVM Debug.Unnamed" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AnalyticsServiceApplication" />
       <item itemvalue="Spring Boot.BillingServiceApplication" />
@@ -520,11 +647,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.get-patients | GET request to example server" />
+        <item itemvalue="HTTP Request.login | Login Request to retrieve a token" />
         <item itemvalue="HTTP Request.create-patient | Create a new patient entity" />
+        <item itemvalue="HTTP Request.get-patients | GET request to example server" />
         <item itemvalue="HTTP Request.All in create-patient" />
         <item itemvalue="HTTP Request.create-billing-account | #1" />
-        <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +680,20 @@
       <workItem from="1749056247030" duration="7882000" />
       <workItem from="1749112237962" duration="493000" />
       <workItem from="1749112746498" duration="6563000" />
-      <workItem from="1749128446860" duration="6081000" />
+      <workItem from="1749128446860" duration="8575000" />
+      <workItem from="1749202657112" duration="1808000" />
+      <workItem from="1749250086684" duration="1361000" />
+      <workItem from="1749251515677" duration="55000" />
+      <workItem from="1749252074347" duration="2590000" />
+      <workItem from="1749255478991" duration="26000" />
+      <workItem from="1749255516269" duration="2000" />
+      <workItem from="1749255544441" duration="2093000" />
+      <workItem from="1749258016366" duration="313000" />
+      <workItem from="1749296913609" duration="1292000" />
+      <workItem from="1749314168355" duration="9218000" />
+      <workItem from="1749980070505" duration="355000" />
+      <workItem from="1749980774636" duration="644000" />
+      <workItem from="1749982020304" duration="6046000" />
     </task>
     <task id="LOCAL-00001" summary="Patient entity in patient-service">
       <option name="closed" value="true" />
@@ -755,7 +895,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749130086836</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="java 17 -&gt; 21">
+      <option name="closed" value="true" />
+      <created>1749139179507</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749139179507</updated>
+    </task>
+    <task id="LOCAL-00027" summary="auth server">
+      <option name="closed" value="true" />
+      <created>1749990283112</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749990283113</updated>
+    </task>
+    <task id="LOCAL-00028" summary="auth server">
+      <option name="closed" value="true" />
+      <created>1749990317309</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1749990317309</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +954,19 @@
     <MESSAGE value="Send kafka event when patient created" />
     <MESSAGE value="Analytics service" />
     <MESSAGE value="api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="api-gateway" />
+    <MESSAGE value="java 17 -&gt; 21" />
+    <MESSAGE value="auth server" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth server" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

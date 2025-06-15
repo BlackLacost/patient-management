@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/resources/data.sql" value="3960c761-38c8-4d69-aec4-bf064b870c20" />
+  </component>
+</project>
